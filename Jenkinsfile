@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'Building'
+                bat build
             }
         }
       stage('test') {
             steps {
-                echo 'Testing'
+                bat test
             }
         }
     }
