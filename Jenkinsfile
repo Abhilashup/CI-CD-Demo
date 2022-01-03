@@ -10,7 +10,7 @@ pipeline {
       stages {
         stage('test') {
             steps {
-                python test_calc.py
+                test test_calc.py
             }
         }
     }
