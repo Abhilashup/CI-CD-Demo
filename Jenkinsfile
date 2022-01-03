@@ -7,12 +7,11 @@ pipeline {
                 build calc.py
             }
         }
-      stages {
         stage('test') {
             steps {
-                test test_calc.py
+                python test_calc.py
             }
         }
     }
 }
-}
+
