@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                build 'calc.py'
+                build calc.py
             }
         }
       stages {
         stage('test') {
             steps {
-                python 'test_calc.py'
+                python test_calc.py
             }
         }
     }
